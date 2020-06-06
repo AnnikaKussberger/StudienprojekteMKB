@@ -1,0 +1,294 @@
+<!-- Aufgabe: (Aufgabe 9, Shopping Objects)
+Name: (Annika Kussberger)
+Matrikel: (258131)
+Datum: (21.12.2017)
+Hiermit versichere ich, dass ich diesen
+Code selbst geschrieben habe. Er wurde
+nicht kopiert und auch nicht diktiert. -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/Onlineshop_Stylesheet.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+		<script src="ts/shoppingdata.js"></script>
+		<title>Musicstore Onlineshop</title>
+		<link rel="icon" type="image/vnd.microsoft.icon" href="img/icofreigestellt.ico">
+	</head>
+	<body>
+<!-- header -->	
+	<header>
+		<nav>
+		<img src="img/logothomann.png" alt="Logo Thomann">
+			<ul >
+				<li><a href="">HOME</a></li>
+				<li><a href="">Service</a></li>
+				<li><a href="">Kontakt</a></li>
+				<li><a href="">Hilfe</a></li> 
+				<li><a href="">Merkliste</a></li>
+				<li><a href="">Warenkorb</a></li>
+				<li id="Filter1">0-20€</li>
+				<li id="Filter2">20-100€</li>
+				<li id="Filter3">100-1000€</li>
+				<li id="Filter4">1000-10000€</li>
+			</ul>
+		</nav>
+	</header>
+	
+<!-- main -->	
+	<main id="htmlContent">
+	<!--<aside>
+		<nav>
+			<ul>
+				<li><a href="">Git./Bass</a></li>
+				<li><a href="">Drums</a></li>
+				<li><a href="">Keys</a></li>
+				<li><a href="">Recording</a></li>
+				<li><a href="">Software</a></li>
+				<li><a href="">PA</a></li>
+				<li><a href="">Licht</a></li>
+				<li><a href="">DJ</a></li>
+				<li><a href="">Mikro</a></li>
+				<li><a href="">Signalporz.</a></li>
+				<li><a href="">Brass</a></li>
+				<li><a href="">Traditionell</a></li>
+				<li><a href="">Noten</a></li>
+				<li><a href="">Cases</a></li>
+				<li><a href="">Kabel</a></li>
+				<li><a href="">Zubehör</a></li>
+			</ul>
+		</nav>
+	</aside> 	
+	<article>
+ 		<div class="box"> 
+			<div class="Stoerer">Top Deal</div>
+			<img src="img/marimba.jpg" alt="Marimba">
+			<p class="schriftgroesse"> Marimba One Marimba 3100 A=443 Hz (5)</p>
+			<p><em>19.998€</em></p>
+			<a href="https://www.thomann.de/de/prod_AR_361706.html">Mehr Informationen</a>
+			<p><button onclick="showMarimba()">in den Warenkorb</button></p>
+		</div>
+		<div class="box"> 
+			<img src="img/vibraphon.jpg" alt="Marimba">
+			<p class="schriftgroesse">Musser M55G A=442 Vibraphon</p>
+			<p><em>7.399€</em></p>
+			<a href="https://www.thomann.de/de/musser_vibraphon_provibe_gold_a442.htm">Mehr Informationen</a>
+			<p><button onclick="showVibraphon()">in den Warenkorb</button></p>
+		</div>
+		<div class="box"> 
+			<img src="img/xylophon.jpg" alt="Xylophon">
+			<p class="schriftgroesse">Adams XS2LV40 Solist XylophoneA=442</p>
+			<p><em>1.439€</em></p>
+			<a href="https://www.thomann.de/de/adams_xylophone_solist_xs2lv_40.htm">Mehr Informationen</a>
+			<p><button onclick="showXylophon()">in den Warenkorb</button></p>
+		</div>
+		<div class="box"> 
+			<img src="img/glockenspiel.jpg" alt="Glockenspiel">
+			<p class="schriftgroesse">Studio 49 RGC 3030 Glockenspiel A=443 M</p>
+			<p><em>3.790€</em></p>
+			<a href="https://www.thomann.de/de/studio_49_rgc_3030_glockenspiel_a443.htm">Mehr Informationen</a>
+			<p><button>in den Warenkorb</button></p>
+		</div>
+		<div class="box"> 
+			<img src="img/roehrenglocken.jpg" alt="Röhrenglocken">
+			<p class="schriftgroesse">Adams BK 2001 Tubular Bells A=442</p>
+			<p><em>4.829€</em></p>
+			<a href="https://www.thomann.de/de/adams_bk2001_roehrenglocken.htm">Mehr Informationen</a>
+			<p><button>in den Warenkorb</button></p>
+		</div>
+		<div class="box"> 
+			<div class="Stoerer">mit Ersatzfell</div>
+			<img src="img/pauken.jpg" alt="Pauken">
+			<p>Adams 29" 2PAUFFI29 FS Universal Fiberglas Kesselpauke</p>
+			<p><em>1.959€</em></p>
+			<a href="https://www.thomann.de/de/adams_29_fiberglass_pauke_feinstimm.htm">Mehr Informationen</a>
+			<p><button>in den Warenkorb</button></p>
+		</div>
+		<div class="box"> 
+			<div class="Stoerer">nur noch 2 verfügbar</div>
+			<img src="img/geige.jpg" alt="Geige">
+			<p class="schriftgroesse">Edgar Russ Linea Mauro Macchi Violin Gua.</p>
+			<p><em>6.990€</em></p>
+			<a href="https://www.thomann.de/de/edgar_russ_linea_mauro_macchi_violin_gua.htm">Mehr Informationen</a>
+			<p><button>in den Warenkorb</button></p>
+		</div>
+		<div class="box"> 
+			<img src="img/egeige.jpg" alt="EGeige">
+			<p>Yamaha SV-255 Silent Violine</p>
+			<p><em>1.669€</em></p>
+			<a href="https://www.thomann.de/de/yamaha_sv255.htm">Mehr Informationen</a>
+			<p><button>in den Warenkorb</button></p>
+		</div>
+		<div class="box"> 
+			<div class="Stoerer">neu!</div>
+			<img src="img/schulterstuetze.jpg" alt="Schulterstütze">
+			<p>Everest Shoulder Rest 4/4 Violin</p>
+			<p><em>17,90€</em></p>
+			<a href="https://www.thomann.de/de/everest_shoulder_rest_44_violin.htm">Mehr Informationen</a>
+			<p><button>in den Warenkorb</button></p>
+		</div>
+		<div class="box"> 
+			<img src="img/saiten.jpg" alt="Saiten">
+			<p>Pirastro Gold E Violin 4/4 KGL Medium</p>
+			<p><em>4,90€</em></p>
+			<a href="https://www.thomann.de/de/pirastro_violin_gold_e_medium.htm">Mehr Informationen</a>
+			<p><button>in den Warenkorb</button></p>
+		</div>
+		<div class="box"> 
+			<img src="img/mikro.jpg" alt="Mikro">
+			<p>Rode NT1-A Complete Vocal Recording</p>
+			<p><em>156€</em></p>
+			<a href="https://www.thomann.de/de/rode_nt1a_complete_vocal_recording.htm">Mehr Informationen</a>
+			<p><button>in den Warenkorb</button></p>
+		</div>
+		<div class="box"> 
+			<img src="img/set.jpg" alt="Set">
+			<p>DW Design Series - Tobacco Bundle</p>
+			<p><em>2.277€</em></p>
+			<a href="https://www.thomann.de/de/dw_design_series_tobacco_bundle.htm">Mehr Informationen</a>
+			<p><button>in den Warenkorb</button></p>
+		</div>
+		<div class="box"> 
+			<div class="Stoerer">empfohlen</div>
+			<img src="img/musikater.jpg" alt="Musikater">
+			<p>Schott Hallo Musikater Vol.1</p>
+			<p><em>11,50€</em></p>
+			<a href="https://www.thomann.de/de/schott_hallo_musikater.htm">Mehr Informationen</a>
+			<p><button>in den Warenkorb</button></p>
+		</div>
+		<div class="box"> 
+			<img src="img/ralfnoten.jpg" alt="Ralf Noten">
+			<p>Ralf Reiter Übungen für kleine Trommel</p>
+			<p><em>25€</em></p>
+			<a href="https://www.thomann.de/de/ralf_reiter_uebungen_fuer_kleine_trommel.htm?ref=search_rslt_ralf+reiter_423936_0">Mehr Informationen</a>
+			<p><button>in den Warenkorb</button></p>
+		</div>
+		<div class="box"> 
+			<img src="img/mikrostaender.jpg" alt="Mikroständer">
+			<p>Millenium MS-2003 Mikrofonstativ</p>
+			<p><em>14,80€</em></p>
+			<a href="https://www.thomann.de/de/millenium_ms2003.htm">Mehr Informationen</a>
+			<p><button>in den Warenkorb</button></p>
+		</div>
+		<div class="box"> 
+			<div class="Stoerer">-10%</div>
+			<img src="img/xlr.jpg" alt="XLR Kabel">
+			<p>the sssnake SM6BK Mikrokabel</p>
+			<p><em>4,99€</em></p>
+			<a href="https://www.thomann.de/de/the_sssnake_sk233-6_mikrokabel.htm">Mehr Informationen</a>
+			<p><button>in den Warenkorb</button></p>
+		</div>
+		<div class="box"> 
+			<img src="img/mischpult.jpg" alt="Mischpult">
+			<p>Alto Live 2404</p>
+			<p><em>629€</em></p>
+			<a href="https://www.thomann.de/de/alto_live_2404.htm">Mehr Informationen</a>
+			<p><button>in den Warenkorb</button></p>
+		</div>
+		<div class="box"> 
+			<img src="img/absorber.jpg" alt="Absorber">
+			<p>the t.bone Micscreen Portabler Absorber Diffusor</p>
+			<p><em>99€</em></p>
+			<a href="https://www.thomann.de/de/the_tbone_micscreen.htm">Mehr Informationen</a>
+			<p><button>in den Warenkorb</button></p>
+		</div>
+		<div class="box"> 
+			<img src="img/kopfhoerer.jpg" alt="Kopfhörer">
+			<p>AKG K-240 Studio Kopfhörer</p>
+			<p><em>67€</em></p>
+			<a href="https://www.thomann.de/de/akg_k_240_studio_kopfhoerer.htm">Mehr Informationen</a>
+			<p><button>in den Warenkorb</button></p>
+		</div>
+		<div class="box"> 
+			<img src="img/monitorbox.jpg" alt="Monitorbox">
+			<p>the box PA M 12 ECO MKII Passiver Monitor</p>
+			<p><em>79€</em></p>
+			<a href="https://www.thomann.de/de/the_box_pa_m_12_eco_mkii.htm">Mehr Informationen</a>
+			<p><button>in den Warenkorb</button></p>
+		</div>
+	</article>-->
+</main>
+	
+<!-- footer -->
+	<footer>
+	<div>
+		<p>Produkte</p>
+		<nav>
+			<ul>
+				<li><a href="">Git./Bass</a></li>
+				<li><a href="">Drums</a></li>
+				<li><a href="">Keys</a></li>
+				<li><a href="">Recording</a></li>
+				<li><a href="">Software</a></li>
+				<li><a href="">PA</a></li>
+				<li><a href="">Licht</a></li>
+				<li><a href="">DJ</a></li>
+				<li><a href="">Mikro</a></li>
+				<li><a href="">Signalporz.</a></li>
+				<li><a href="">Brass</a></li>
+				<li><a href="">Traditionell</a></li>
+				<li><a href="">Noten</a></li>
+				<li><a href="">Cases</a></li>
+				<li><a href="">Kabel</a></li>
+				<li><a href="">Zubehör</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div>
+		<p>Sitemap</p>
+		<nav>
+			<ul>
+				<li><a href="">Home</a></li>
+				<li><a href="">Shop</a></li>
+				<li><a href="">Karriere</a></li>
+				<li><a href="">Hot Deals</a></li>
+				<li><a href="">Topseller</a></li>
+				<li><a href="">Newscenter</a></li>
+				<li><a href="">Schnäppchen</a></li>
+				<li><a href="">Online-Ratgeber</a></li>
+				<li><a href="">Hersteller-Links</a></li>
+				<li><a href="">Kleinanzeigen</a></li>
+				<li><a href="">Kundencenter</a></li>
+				<li><a href="">Service</a></li>
+				<li><a href="">Wunschliste</a></li>
+				<li><a href="">Über uns</a></li>
+				<li><a href="">Hilfe</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div>
+		<p>Kontakt&Servive</p>
+		<nav>
+			<ul>
+				<li><a href="">09546/922366 </a></li>
+				<li><a href="">info@thomann.de </a></li>
+				<li><a href="">Überblick</a></li>
+			</ul>
+		</nav>
+				
+		<p>Ladengeschäft</p>
+		<nav>
+			<ul>
+				<li><a href="">Öffnungszeiten</a></li>
+				<li><a href="">Wegbeschreibung</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div>
+		<p>Mehr Thomann</p>
+		<nav>
+			<ul>
+				<li><a href="">Facebook</a></li>
+				<li><a href="">t.blog</a></li>
+				<li><a href="">Youtube</a></li>
+				<li><a href="">Instagram</a></li>
+				<li><a href="">Twitter</a></li>
+				<li><a href="">Pinterest</a></li>
+			</ul>
+		</nav>
+	</div>
+	</footer>
+	</body>
+	</html>

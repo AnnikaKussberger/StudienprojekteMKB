@@ -1,0 +1,231 @@
+html {
+	font-size: 1.0em;
+	line-height: 1.5em;
+	font-family: 'Open Sans', sans-serif;
+	background-color: #3b3b3b;
+}
+
+.box{
+	border: 1px solid #c0c0c0;
+	width: 96%;
+	height: 31em;
+	padding: 1%;
+	margin: 1%;
+	text-align: center;
+	float: left;	
+	position: relative;
+	}
+
+.box:nth-child(7n+1){
+	clear: left;
+}
+img{
+    display: block;
+    margin: auto;    
+}
+main img{
+	width: 50%;
+}
+button{
+	background-color: grey;
+	border: none;
+	padding: 1.5em;
+	cursor: pointer;
+	color: white;
+}
+button:hover{
+		background-color: #08a3d7;
+}
+header{
+	width: 100%;
+	margin-left: 0%;
+	margin-right: 0%;
+	background-color: #171717;
+	position: static;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+
+/* Infos zur Navigation*/
+header ul {
+    list-style-type: none;
+    margin: 0; /*nächstes Element schließt unten direkt an*/
+    padding: 0;
+    overflow: hidden;
+   	text-align: center;
+   	
+}
+header li, main li{
+	display: block; 
+	padding: 0.2em;	
+}
+
+/*Navigation im Header soll weiß geschrieben sein*/
+header a{
+	color: white;	
+}
+header li{
+	color: white;
+}
+/*Navigation soll nicht unterstrichen sein*/
+header a, aside a{
+	text-decoration: none;
+}
+	
+/*80 Prozent Breite, 10Prozent jeweils von rechts und links weg, Hintergrundfarbe */
+main{
+	width: 100%;
+	margin-left: 0%;
+	margin-right: 0%;
+	background-color: white;	
+	overflow: hidden;
+	margin-top: 0px;
+}
+main a{
+	color: black;
+}
+main ul{
+	border-bottom: 1px solid #c0c0c0;
+	list-style-type: none;
+    margin: 0; /*nächstes Element schließt unten direkt an*/
+    overflow: hidden;
+   	text-align: center;
+   	padding: 0em;
+}
+/*Text wird beim drüberfahren türkis*/
+a:hover{
+	color: #08a3d7;
+}
+img ~ p{
+	font-size: 1.25em;
+	line-height: 1.7em;
+}
+main p ~ p{
+	font-weight: bold;
+	color: #3B3B3B;
+	
+}
+footer{
+	background-color: #e2e2e2;
+	width: 100%;
+	margin-left: 0%;
+	margin-right: 0%;
+	overflow: hidden;	
+}
+footer div{
+	float: left;
+	width: 96%;
+	padding: 1%;
+	padding: 1%;
+	text-align: center;
+}
+footer ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+footer a{
+	text-decoration: none;	
+	color: black;
+}
+div>p{
+	font-size: 1.3em;
+}
+.Stoerer{
+	padding: 2% 2.7%; 
+    background-color: #ed253d;
+    width: 5em;
+    border-radius: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    transform: rotate(15deg);
+    color: white;
+}
+.schriftgroesse{
+	font-size: 97%;
+}
+@media screen and (min-width: 36.625em) {
+	.box {
+		width: 45%;	
+	}		
+	header, footer, main{
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%
+	}
+	header li, main li{
+		display: inline;
+	}
+	header ul{
+	padding-top: 1.5em;
+	padding-bottom: 1em;
+	}
+	main ul {
+	padding-top: 0.2em;
+	}
+}
+
+@media screen and (min-width: 48em) {
+	.box {
+		width: 29%;	
+	}
+	header, footer, main{
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%
+	}
+	header li, main li{
+		display: inline;
+	}
+	header ul{
+	padding-top: 1.5em;
+	padding-bottom: 1em;
+	}
+	main ul {
+	padding-top: 0.2em;
+	}
+	footer div{
+	width: 20%
+	}
+}
+@media screen and (min-width: 64em) {
+	
+	.box {
+		width: 20.5%;	
+	}	
+	header, footer, main{
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%
+	}
+	header li, main li{
+		display: inline;
+	}
+	header ul{
+	padding-top: 1.5em;
+	padding-bottom: 1em;
+	}
+	main ul {
+	padding-top: 0.2em;
+	}
+	footer div{
+	width: 20%
+	}
+}
+
+@media print {
+	
+	body {
+		font-size: 10pt;
+	}
+	.box {
+		width: 29%;
+	}	
+	
+	header, footer, main ul {
+		display:none;
+	}
+}
