@@ -1,0 +1,49 @@
+body{
+    background-color: #707070;
+    font-family: century gothic;
+    color: white;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    margin-top: 100px;
+    margin-bottom: 40pxS;
+    padding: 0px;
+    text-align: center;
+    font-size: 30pt;
+  }
+  ul li {
+    padding: 20px;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  hr{
+    border-top: 3px solid white;
+    width: 800px;
+  }
+  img {
+    /*border: 3px solid rgb(57, 172, 218);*/
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    margin-top: 600px;
+    margin-bottom: 300px;
+  }
+
+h1{
+    font-size: 70pt;
+    font-weight: 700;
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    word-break: break-all;
+    color: black;
+    width:280px; 
+    text-align: center;
+}
