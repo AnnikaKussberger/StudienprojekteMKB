@@ -1,0 +1,92 @@
+body {
+    background-color: #707070;
+    font-family: century gothic;
+    color: white;
+  }
+  h2{
+    text-align:center;  
+    font-size: 40pt;
+    margin-top: 400px;
+    margin-bottom:0px;
+    font-weight: 200;
+
+  }
+  h1 {
+    color: white;
+    /*margin-left: 150px;*/
+    position: static;
+    /*border: 3px solid #73AD21;*/
+    text-align:center;  
+    margin-top: -5px; 
+    margin-bottom: 20px; 
+    font-size: 60pt; 
+  }
+
+ 
+  p {
+      color: black;
+      /*border: 3px solid rgb(173, 66, 33);*/
+      text-align:center;  
+      margin-top: 0px;
+      margin-bottom: 60px;
+      font-size: 30px;
+  }
+  img {
+    /*border: 3px solid rgb(57, 172, 218);*/
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+  }
+
+#tapToPlay{
+    font-size: 60pt;
+    font-weight: 400;
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    word-break: break-all;
+    color: black;
+    width:280px; 
+    text-align: center;
+}
+
+  #howToPlay{
+    color: white;
+    text-align:center;  
+    font-size: 40pt;
+    margin-top: 400px;
+    margin-bottom:0px;
+    font-weight: 200;
+    text-decoration: none;
+  }
+
+  #about {
+    text-decoration: none;
+    color: white;
+    text-align:center;  
+    font-size: 40pt;
+    margin-bottom:0px;
+    font-weight: 200;
+    text-decoration: none;
+    m
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    margin-top: 100px;
+    margin-bottom: 40pxS;
+    padding: 0px;
+    text-align: center;
+  }
+  ul li {
+    padding: 20px;
+  }
+  hr{
+    border-top: 3px solid white;
+    width: 800px;
+  }
