@@ -3,6 +3,7 @@ body{
     font-family: century gothic;
     color: white;
   }
+
 h1 {
     text-align: center;
     color: black;
@@ -19,6 +20,7 @@ ul {
     padding: 0px;
     text-align: center;
   }
+  
   li {
     padding: 20px;
     text-decoration: none;
@@ -31,6 +33,7 @@ ul {
     text-decoration: none;
     color: white;
   }
+
   hr{
     border-top: 3px solid white;
     width: 800px;
